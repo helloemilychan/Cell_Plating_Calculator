@@ -21,20 +21,17 @@ Label(text='Number of wells').grid(row=0, column=0, stick=E)
 Label(text='Density (#cells per well)').grid(row=1, column=0, stick=E)
 
 num_wells = IntVar()
-num_wells.set(96)
 input_num_wells = Entry(win, textvariable=num_wells)
 input_num_wells.grid(row=0, column=1, stick=S, padx=10)
 
 cells_well = IntVar()
 input_cells_well = Entry(win, textvariable=cells_well)
-cells_well.set("4000")
 input_cells_well.grid(row=1, column=1)
 
 l3 = Label(win, text='Volume per well (μL)')
 l3.grid(row=2, column=0, stick=E)
 v_well = IntVar()
 input_v_well = Entry(win, textvariable=v_well)
-v_well.set('80')
 input_v_well.grid(row=2, column=1)
 
 l4 = Label(win, text='Dilution Factor (%)')
